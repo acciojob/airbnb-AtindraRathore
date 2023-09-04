@@ -80,7 +80,8 @@ public class HotelManagementRepository {
         for (int i = 0; i < newFacilities.size(); i++) {
             if (!facilities.contains(newFacilities.get(i)))facilities.add(newFacilities.get(i));
         }
-      
+      List<Facility> facilityList=new ArrayList<>(setlist);
+        hotel.setFacilities(facilityList);
         hotelMap.put(hotelName, hotel);
         return hotel;
     }
