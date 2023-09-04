@@ -81,7 +81,6 @@ public class HotelManagementRepository {
             if (!facilities.contains(newFacilities.get(i)))facilities.add(newFacilities.get(i));
         }
    
-        hotelMap.put(hotelName, hotel);
         return hotel;
     }
 }
