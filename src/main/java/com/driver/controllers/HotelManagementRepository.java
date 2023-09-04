@@ -82,7 +82,7 @@ public class HotelManagementRepository {
         }
       List<Facility> facilityList=new ArrayList<>(setlist);
         hotel.setFacilities(facilityList);
-        hotelMap.put(hotelName, hotel);
+        
         return hotel;
     }
 }
